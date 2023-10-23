@@ -1,13 +1,20 @@
-const person = {
-    name: 'Hog',
-    walk() {
-        console.log(this + ' is walking')
-    },
-    talk() { }
-};
+const square = function (number) {
+    return number * number;
+}
 
-person.walk();
+const squareBis = number => number * number;
+
+console.log(square(5));
+console.log(squareBis(5));
 
 
-const walk = person.walk.bind(person.name);
-walk();
+const jobs = [
+    { id: 1, isActive: true },
+    { id: 2, isActive: false },
+    { id: 3, isActive: true }
+]
+
+//const activeJobs = jobs.filter(function (job) { return job.isActive; })
+const activeJobsBis = jobs.filter(job => job.isActive == false)
+
+console.log(activeJobsBis);
