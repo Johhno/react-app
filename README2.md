@@ -9,7 +9,10 @@ npx create-react-app react-app (should show “Happy Hacking!” at end of insta
 cd react-app
 npm start (should show basic web page)
 
-npm install react@16.13.1 react-dom@16.13.1
+#install version
+create folder name-react
+cd name-react
+npm install react@16.13.1 react-dom@16.13.1 * nope
 ---
 *Fonctionne my-app
 npm rm -g create-react-app
