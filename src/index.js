@@ -1,20 +1,17 @@
-const square = function (number) {
-    return number * number;
-}
+// can be called
+// var => function
+// const - let => block
 
-const squareBis = number => number * number;
+const person = {
+    talk() {
 
-console.log(square(5));
-console.log(squareBis(5));
+        var self = this;
+        setTimeout(function () {
+            console.log("self", self);
+        }, 1000);
 
+    }
+};
 
-const jobs = [
-    { id: 1, isActive: true },
-    { id: 2, isActive: false },
-    { id: 3, isActive: true }
-]
+person.talk();
 
-//const activeJobs = jobs.filter(function (job) { return job.isActive; })
-const activeJobsBis = jobs.filter(job => job.isActive == false)
-
-console.log(activeJobsBis);
