@@ -12,7 +12,8 @@ class Counter extends Component {
     // }
 
     handleIncrement = () => {
-        console.log('Increment Clicked', this);
+        this.state.count++;
+        this.setState({ count: this.state.count + 1 });
     }
     
     getBadgeClasses() {
