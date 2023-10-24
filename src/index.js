@@ -13,5 +13,16 @@ const person = {
     }
 };
 
+const personBis = {
+    talk() {
+
+        var self = this;
+        setTimeout(() => {
+            console.log("this", this);
+        }, 1);
+
+    }
+};
+
 person.talk();
 
