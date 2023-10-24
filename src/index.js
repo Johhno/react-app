@@ -1,17 +1,14 @@
-const first = [1, 2, 3];
-const second = [4, 5, 6];
 
-// const combined = first.concat(second);
-// const combined = [...first, 'a', ...second, 'b'];
 
-const clone = [...first];
-console.log(first);
-console.log(clone);
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
 
-const premier = { name: 'John' };
-const seconde = { job: 'instructeur' };
+    walk() {
+        console.log("Je marche seul!. Dans les rues,");
+    }
+}
 
-const combiné = { ...premier, ...seconde, location: 'Australia' };
-const cloneCombiné = { ...premier };
-console.log(combiné);
-console.log(cloneCombiné);
+const person = new Person("John");
+console.log(person.name);
